@@ -60,10 +60,27 @@ const Navbar = () => {
 					}
 				>
 					<ul>
-						<li className='text-2xl'>Platform</li>
-						<li className='text-2xl'>Developers</li>
-						<li className='text-2xl'>Community</li>
-						<li className='text-2xl'>About</li>
+						<li className='text-2xl'>
+							<Link spy={true} to='Navbar'>
+								Platform
+							</Link>
+						</li>
+						<li className='text-2xl'>
+							<Link spy={true} to='Community'>
+								Community
+							</Link>
+						</li>
+						<li className='text-2xl'>
+							<Link spy={true} to='Developers'>
+								Developers
+							</Link>
+						</li>
+
+						<li className='text-2xl'>
+							<Link spy={true} to='About'>
+								About
+							</Link>
+						</li>
 						<button className='m-8'>Use Defi</button>
 					</ul>
 				</div>

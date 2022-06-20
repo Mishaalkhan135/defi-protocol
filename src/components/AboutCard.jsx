@@ -8,7 +8,7 @@ const AboutCard = (props) => {
 					{props.icon}
 				</div>
 				<h3 className='text-xl font-bold py-4'>{props.heading}</h3>
-				<p>{props.text}</p>
+				<p className='text-justify'>{props.text}</p>
 			</div>
 		</div>
 	);

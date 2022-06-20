@@ -13,9 +13,9 @@ const Hero = () => {
 				muted
 			/>
 			<div className='w-full h-[90%] italic flex flex-col justify-center items-center text-white px-4 text-center'>
-				<h1>Decentralized</h1>
+				<h1 className='md:text-7xl text-3xl'>Decentralized</h1>
 				<h1 className='py-2'>
-					<span className='blue'>Trading</span> Protocol
+					<span className='blue'>Trading Protocol</span>
 				</h1>
 				<p className='text-xl py-4'>
 					Guaranteed liquidity trading for millions of users and top
@@ -27,8 +27,8 @@ const Hero = () => {
 				</div>
 			</div>
 			<div>
-				<p className='text-center text-white text-2xl font-bold'>
-					Total Volume Secured: $42,104,783,662.47
+				<p className='text-center text-white text-2xl font-bold italic'>
+					Total Volume Secured: $80,104,783,662.47
 				</p>
 			</div>
 		</div>
