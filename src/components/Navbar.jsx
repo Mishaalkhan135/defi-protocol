@@ -24,20 +24,21 @@ const Navbar = () => {
 						</li>
 						<li className='hover:text-red-500 hover:underline'>
 							<Link spy={true} to='Community'>
-								Community
+								About
 							</Link>
 						</li>
+
 						<li className='hover:text-red-500 hover:underline'>
 							<Link spy={true} to='Developers'>
 								Developers
 							</Link>
 						</li>
-
 						<li className='hover:text-red-500 hover:underline'>
 							<Link spy={true} to='About'>
-								About
+								Community
 							</Link>
 						</li>
+
 						<button className='ml-4'>Use Defi</button>
 					</ul>
 				</div>
