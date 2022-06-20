@@ -3,7 +3,7 @@ import React from "react";
 const Subscribe = () => {
 	return (
 		<div
-			className='w-full px-4 py-16 bg-black text-white text-center'
+			className='w-full px-4 py-16 text-black text-white text-center bg-white'
 			id='About'
 		>
 			<h1>Join Our DeFi Community</h1>
