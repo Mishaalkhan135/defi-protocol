@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
-
+import DEC from "../assets/DEC.png";
 const Navbar = () => {
 	const [nav, setNav] = useState(false);
 	const handleNav = () => {
@@ -10,8 +10,8 @@ const Navbar = () => {
 	return (
 		<div className='w-full h-[90px] bg-black'>
 			<div className='max-w-[1240px] mx-auto px-4 flex justify-between items-center h-full'>
-				<div>
-					<h1 className='text-[#00d8ff]'>DEFI</h1>
+				<div className='w-32'>
+					<img src={DEC} alt='logo' />
 				</div>
 				<div className='hidden md:flex'>
 					<ul className='flex text-white items-center hover:cursor-pointer'>
