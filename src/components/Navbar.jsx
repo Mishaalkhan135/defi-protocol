@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import DEC from "../assets/DEC.png";
+import { Link } from "react-scroll";
+
 const Navbar = () => {
 	const [nav, setNav] = useState(false);
 	const handleNav = () => {
@@ -8,7 +10,7 @@ const Navbar = () => {
 	};
 
 	return (
-		<div className='w-full h-[90px] bg-black'>
+		<div className='w-full h-[90px] bg-black' id='Navbar'>
 			<div className='max-w-[1240px] mx-auto px-4 flex justify-between items-center h-full'>
 				<div className='w-32'>
 					<img src={DEC} alt='logo' />
@@ -16,16 +18,25 @@ const Navbar = () => {
 				<div className='hidden md:flex'>
 					<ul className='flex text-white items-center hover:cursor-pointer'>
 						<li className='hover:text-red-500 hover:underline'>
-							Platform
+							<Link spy={true} to='Navbar'>
+								HEADER
+							</Link>
 						</li>
 						<li className='hover:text-red-500 hover:underline'>
-							Developers
+							<Link spy={true} to='Community'>
+								Community
+							</Link>
 						</li>
 						<li className='hover:text-red-500 hover:underline'>
-							Community
+							<Link spy={true} to='Developers'>
+								Developers
+							</Link>
 						</li>
+
 						<li className='hover:text-red-500 hover:underline'>
-							About
+							<Link spy={true} to='About'>
+								About
+							</Link>
 						</li>
 						<button className='ml-4'>Use Defi</button>
 					</ul>
